@@ -1,0 +1,88 @@
+#Login_table
+{background-color:white;
+margin-top:120px;
+width:450px;
+height:350PX;
+border-radius:3px;}
+#selfie_logo
+{
+	
+	width:100px;
+	height:100px;
+	margin-left:170px;
+	margin-top:-20px;}
+	#member_P
+	{
+		color:darkblack;
+		opacity:1.00;
+		FLOAT:LEFT;
+		MARGIN-TOP:PX;
+		margin-left:-250px;	
+	}
+	
+#email
+{
+	width:384px;
+	height:35px;
+	border:1px solid #626767;
+	margin-left:26.50px;
+	margin-top:10.50px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:8px;
+	padding-bottom:8px;
+	color:black;
+	border-radius:1px;}
+#password
+{
+	width:384px;
+	height:35px;
+	border:1px solid #626767;
+	margin-left:27px;
+	margin-top:px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:8px;
+	padding-bottom:8px;
+	color:black;
+	border-radius:1px;}
+#loginbutton
+{
+	width:384px;
+	height:35px;
+	border:1px solid #626767;
+	margin-left:27px;
+	margin-top:px;
+	color:#3d4040;
+	background-color:white;
+	font-size:19px;
+	font-family:Calibri;
+	cursor:pointer;
+	outline-style:none;
+
+	}
+#loginbutton:hover{
+	background-color:#3d4040;
+	color:white;
+}
+#check1
+{
+	font-size:12px;
+	margin-top:10px;	
+	margin-left:27px;
+}
+#forgot
+{
+	float:right;
+	margin-top:7px;
+	margin-right:33px;	
+	color:blue;
+}
+#forgot:hover{
+	color:#3d4040;
+}
+#join_a
+{color:black;}
+#join_a:hover
+{color:green;
+curosr:pointer;}
