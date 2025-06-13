@@ -1,11 +1,19 @@
+<?php
+//if (!isset($_SESSION['nID']))
+  //  header("Location: login.php");
+?>
+<script>
+var x=confirm("SIGNUP NOW TO ENJOY SELFIE");
+if (x== true) {
+    location.assign("login.php");
+}
+</script>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Selfie</title>
-<link rel="icon"
-	type="images/jpg"
-	href="images/icon/selfielogo.png">
+<link rel="icon" type="images/jpg" href="images/icon/selfielogo.png">
  	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
         <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
@@ -31,7 +39,7 @@
 							<div class="deco" data-icon="S"></div>
 							<h2>Selfie</h2>
 							<blockquote><p>Selfie is a social site, where u can see many of selfies and share ur own selfies and u can share many videos or many of things... 
-                            <a href="#">See more</a></p><cite>Wahaj Ahmad</cite></blockquote>
+                            <a href="#">See more</a></p><cite>Naveed ul Aziz</cite></blockquote>
 						</div>
 					</div>
 					
@@ -39,8 +47,8 @@
 						<div class="sl-slide-inner">
 							<div class="deco" data-icon="A"></div>
 							<h2>About Us</h2>
-							<blockquote><p>I’m Wahaj Ahmad, the main guy behind the site. I like selfies. I spotted a gap in the market, and will do pretty much anything to procrastinate from work... 
-                            <A href="">See more</A></p><cite>Wahaj Ahmad</cite></blockquote>
+							<blockquote><p>I’m Naveed ul Aziz, the main guy behind the site. I like selfies. I spotted a gap in the market, and will do pretty much anything to procrastinate from work... 
+                            <A href="">See more</A></p><cite>Naveed ul Aziz</cite></blockquote>
 						</div>
 					</div>
 					
@@ -48,7 +56,7 @@
 						<div class="sl-slide-inner">
 							<div class="deco" data-icon="F"></div>
 							<h2>Friends</h2>
-							<blockquote><p>You can make new friends through selfie. it is allow you to chat with people...<a href"#">See more</a> </p><cite>Wahaj Ahmad</cite></blockquote>
+							<blockquote><p>You can make new friends through selfie. it is allow you to chat with people...<a href"#">See more</a> </p><cite>Naveed ul Aziz</cite></blockquote>
 						</div>
 					</div>
 					
@@ -56,32 +64,19 @@
 						<div class="sl-slide-inner">
 							<div class="deco" data-icon="N"></div>
 							<h2>No cost</h2>
-							<blockquote><p>You can join Selfie at no cost. want to join now?<a href="">Join For free</a>	</p><cite>Wahaj Ahmad</cite></blockquote>
+							<blockquote><p>You can join Selfie at no cost. want to join now?<a href="login.php">Join For free</a>	</p><cite>Naveed ul Aziz</cite></blockquote>
 						</div>
 					</div>
 					
 					<div class="sl-slide bg-6"style="background-image:url('')" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
 						
 <div class="sl-slide-inner">
-<div align="center">
-<table id="Login_table">
-<th>
-<td>
-  <image src="images/icon/selfielogo.png" id="selfie_logo">
-  <input id="email"type="email" alt="" name="" placeholder="Email"/>
-  <br><br>
-  <input id="password"	type="password" alt="" name="" placeholder="Password"/>
-  <br><br>
-  <input id="loginbutton" type="button" value="Login">
-  <br>
-  <input id="check1"type="checkbox" value=""  >Remember Me</input>	
-  <a href="#" id="forgot">Forgot Password</a>
-  </td>
-</th>
-</table>
+	<?php include "login.php" ?>
 </div>
+</div>    
 </div>
-</div>
+
+
                     	<nav id="nav-arrows" class="nav-arrows">
 					<span class="nav-arrow-prev">Previous</span>
 					<span class="nav-arrow-next">Next</span>
@@ -98,6 +93,8 @@
 			</div><!-- /slider-wrapper -->
 
         </div>
+		</div>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>

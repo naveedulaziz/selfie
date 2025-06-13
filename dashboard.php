@@ -1,0 +1,83 @@
+<?php if(!session_id()){
+	session_start();
+}
+
+if (!isset($_SESSION['adminname'])){
+	header("location: adminlogin.php");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <title>Dashboard</title>
+<style>
+body {
+	padding:0;
+	margin:0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+<?php include('control.php'); ?>
+    <!-- <div id="piechart" style="width: auto; height: 500px;"></div>    --> 
+    <div id="donutchart" style="width: auto; height: 600px;">
+      <div style="position: relative;">
+        <div dir="ltr" style="position: relative; width: 1074px; height: 600px;">
+          <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+             <svg width="1074" height="600" aria-label="A chart." style="overflow: hidden;">
+             <defs id="defs"></defs><rect x="0" y="0" width="1074" height="600" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+              <g><text text-anchor="start" x="192" y="88.75" font-family="Arial" font-size="15" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Activities</text><rect x="192" y="76" width="690" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="642" y="115" width="240" height="87" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="642" y="115" width="240" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="663" y="127.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Views</text></g><circle cx="649.5" cy="122.5" r="7.5" stroke="none" stroke-width="0" fill="#3366cc"></circle></g><g><rect x="642" y="139" width="240" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="663" y="151.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Comments</text></g><circle cx="649.5" cy="146.5" r="7.5" stroke="none" stroke-width="0" fill="#dc3912"></circle></g><g><rect x="642" y="163" width="240" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="663" y="175.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Users</text></g><circle cx="649.5" cy="170.5" r="7.5" stroke="none" stroke-width="0" fill="#ff9900"></circle></g><g><rect x="642" y="187" width="240" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="663" y="199.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Photos</text></g><circle cx="649.5" cy="194.5" r="7.5" stroke="none" stroke-width="0" fill="#109618"></circle></g></g><g><path d="M362.1228387328623,240.68790302375595L297.8070968321558,150.21975755938985A185,185,0,0,1,405,116L405,227A74,74,0,0,0,362.1228387328623,240.68790302375595" stroke="#ffffff" stroke-width="1" fill="#109618"></path><text text-anchor="start" x="340.66108845472115" y="156.3952909469539" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#ffffff">9.8%</text></g><g><path d="M356.14874307032886,245.41623711558154L282.8718576758221,162.04059278895383A185,185,0,0,1,297.8070968321558,150.21975755938985L362.1228387328623,240.68790302375595A74,74,0,0,0,356.14874307032886,245.41623711558154" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path></g><g><path d="M332.9784363461717,284.00310708224714L224.94609086542923,258.5077677056178A185,185,0,0,1,282.8718576758221,162.04059278895383L356.14874307032886,245.41623711558154A74,74,0,0,0,332.9784363461717,284.00310708224714" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="258.20461144265585" y="228.01136286190257" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#ffffff">9.8%</text></g><g><path d="M405,227L405,116A185,185,0,1,1,224.94609086542923,258.5077677056178L332.9784363461717,284.00310708224714A74,74,0,1,0,405,227" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><text text-anchor="start" x="478.2198535792552" y="424.6619734113222" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#ffffff">78.7%</text></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Name</th><th>Quantity</th></tr></thead><tbody><tr><td>Views</td><td>48</td></tr><tr><td>Comments</td><td>6</td></tr><tr><td>Users</td><td>1</td></tr><tr><td>Photos</td><td>6</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 610px; left: 1084px; white-space: nowrap; font-family: Arial; font-size: 15px;">Photos</div><div></div></div></div>
+    </div>
+  
+    <!-- /.row -->
+</body>
+</html>
