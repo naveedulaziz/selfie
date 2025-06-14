@@ -10,6 +10,11 @@
         <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
         <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
         <meta name="author" content="Codrops" />
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="Css/styles.css">
+
         <link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="Css/demo.css" />
         <link rel="stylesheet" type="text/css" href="Css/style.css" />
@@ -20,7 +25,7 @@
 
 <body>
 <div class="container demo-1">
-	
+<button type="submit" formaction="../index.html">Main Page</button>	
 
             <div id="slider" class="sl-slider-wrapper">
 
@@ -63,25 +68,63 @@
 					<div class="sl-slide bg-6"style="background-image:url('')" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
 						
 <div class="sl-slide-inner">
-<div align="center">
-<table id="Login_table">
-<th>
-<td>
-  <image src="images/icon/selfielogo.png" id="selfie_logo">
-  <input id="email"type="email" alt="" name="" placeholder="Email"/>
-  <br><br>
-  <input id="password"	type="password" alt="" name="" placeholder="Password"/>
-  <br><br>
-  <input id="loginbutton" type="button" value="Login">
-  <br>
-  <input id="check1"type="checkbox" value=""  >Remember Me</input>	
-  <a href="#" id="forgot">Forgot Password</a>
-  </td>
-</th>
-</table>
+<div class="container1">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <form>
+      <div class="input-container1">
+        <input type="text" id="#{label}" required="required"/>
+        <label for="#{label}">Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container1">
+        <input type="password" id="#{label}" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container1">
+        <button><span>Go</span></button>
+      </div>
+      <div class="footer"><a href="#">Forgot your password?</a></div>
+    </form>
+  </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Register
+      <div class="close"></div>
+    </h1>
+    <form>
+      <div class="input-container1">
+        <input type="text" id="#{label}" required="required"/>
+        <label for="#{label}">Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container1">
+        <input type="password" id="#{label}" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container1">
+        <input type="password" id="#{label}" required="required"/>
+        <label for="#{label}">Repeat Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container1">
+        <button><span>Next</span></button>
+      </div>
+    </form>
+	</div>
 </div>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+	<script src="Js/index.js"></script>
+	
 </div>
+</div>    
 </div>
+
+
                     	<nav id="nav-arrows" class="nav-arrows">
 					<span class="nav-arrow-prev">Previous</span>
 					<span class="nav-arrow-next">Next</span>
@@ -99,6 +142,7 @@
 
         </div>
 		</div>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
