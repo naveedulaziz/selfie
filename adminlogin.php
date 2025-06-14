@@ -21,7 +21,7 @@ if (isset($_SESSION['adminname'])){
 		 header("location: dashboard.php");
 	 }
 	 else{
-		 $_SESSION['massage']="ADMIN NAME AND PASSWORD DO NOT MATCH";
+		 $_SESSION['massage']="USER NAME AND PASSWORD DO NOT MATCH";
 	 }
  }
 
